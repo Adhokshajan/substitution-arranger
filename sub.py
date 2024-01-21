@@ -22,7 +22,6 @@ def sub():
         while True:
             d=p.load(f)
             if d[0]==x:
-                print(d)
                 q=[]
                 for i in d[1]:
                     q.append(i)
@@ -30,12 +29,10 @@ def sub():
         f.close()
     m=dict()
     c=[]
-    print(q)
     for i in q:
         if i!=None:
             c+=[q.index(i)]
 
-    print(c)
 
     f=open("Sub.dat","rb+")
     try:
@@ -63,7 +60,6 @@ def sub():
             v.append(i)
         for k in b:
             w.append(k)
-        print(m)
 
         if r in h:
             s=v.index(r)
